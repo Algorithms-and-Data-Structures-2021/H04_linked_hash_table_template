@@ -8,7 +8,7 @@ set(TARGET_NAME run_tests)
 
 # add test sources here ... 
 add_executable(${TARGET_NAME} runner_tests.cpp)
-target_link_libraries(${TARGET_NAME} PRIVATE Catch2::Catch2)
+target_link_libraries(${TARGET_NAME} PRIVATE Catch2::Catch2 ${PROJECT_NAME})
 
 # FakeIt
 target_include_directories(${TARGET_NAME} PRIVATE
